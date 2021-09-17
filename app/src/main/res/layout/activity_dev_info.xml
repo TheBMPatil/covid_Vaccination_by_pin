@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_margin="5dp"
@@ -37,7 +38,7 @@
                 android:id="@+id/BM"
                 android:layout_width="200dp"
                 android:layout_height="200dp"
-                android:src="@drawable/bhagvt"
+                tools:srcCompat="@tools:sample/avatars"
                 android:layout_margin="20dp"
                 android:drawablePadding="4dp"
                 android:padding="4dp"
@@ -50,11 +51,13 @@
                 android:layout_margin="20dp"
                 android:layout_marginTop="50dp"
                 android:padding="4dp"
-                android:text="Mutthe Bhagvat Nivrutti"
+                tools:text="Developers name"
                 android:textSize="20dp"
                 android:layout_gravity="center"
                 android:textColor="#000000"
                 android:textStyle="bold" />
+
+
         </LinearLayout>
 
         <LinearLayout
@@ -71,7 +74,7 @@
                 android:layout_height="200dp"
                 android:layout_margin="20dp"
                 android:padding="4dp"
-                android:src="@drawable/pravin"
+                tools:srcCompat="@tools:sample/avatars"
                 android:textColor="#000000" />
 
             <TextView
@@ -80,7 +83,7 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="20dp"
                 android:padding="4dp"
-                android:text="Kale Pravin Tejrao"
+                tools:text="Developers name"
                 android:textSize="20dp"
                 android:textStyle="bold"
                 android:layout_gravity="center"
