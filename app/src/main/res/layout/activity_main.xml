@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="155dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="150dp"
+        android:layout_marginBottom="30dp"
+        android:src="@drawable/cvlogo" />
+
+    <RelativeLayout
+        android:id="@+id/pinlayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/logo">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/pincode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:text="Pincode Of your Area"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/idEdtPinCode"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/roundcrnr"
+            android:hint="Enter Pin here"
+            android:inputType="number"
+            android:padding="10dp"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/idBtnSearch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="30dp"
+            android:background="#32cd32"
+            android:text="Search"
+            android:textAllCaps="false"
+            android:textColor="#FFFF"
+            android:textStyle="bold" />
+        <Button
+            android:id="@+id/dev"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="200dp"
+            android:layout_marginEnd="200dp"
+            android:layout_marginTop="10dp"
+            android:textSize="10dp"
+            android:text="Develpers" />
+    </LinearLayout>
+    </RelativeLayout>
+    <!--progress bar for loading indicator-->
+    <ProgressBar
+        android:id="@+id/idPBLoading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone" />
+
+    <!--recycler view for displaying results in the form of list-->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/centersRV"
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/pinlayout"
+        tools:listitem="@layout/center_rv_item" />
+
+
+</RelativeLayout>

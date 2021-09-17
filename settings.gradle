@@ -1,0 +1,2 @@
+rootProject.name = "covid_Vaccination_by_pin"
+include ':app'

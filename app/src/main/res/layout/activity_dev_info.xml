@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="5dp"
+    android:elevation="10dp"
+    android:padding="5dp"
+
+    app:cardElevation="5dp">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Developed By"
+        android:textStyle="bold"
+        android:textSize="25dp"
+        android:layout_margin="10dp"
+        android:layout_gravity="center_horizontal"
+        />
+
+    <RelativeLayout
+        android:id="@+id/rl1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:id="@+id/mll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:layout_marginTop="50dp"
+            >
+
+            <ImageView
+                android:id="@+id/BM"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:src="@drawable/bhagvt"
+                android:layout_margin="20dp"
+                android:drawablePadding="4dp"
+                android:padding="4dp"
+                />
+
+            <TextView
+                android:id="@+id/BMnm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:layout_marginTop="50dp"
+                android:padding="4dp"
+                android:text="Mutthe Bhagvat Nivrutti"
+                android:textSize="20dp"
+                android:layout_gravity="center"
+                android:textColor="#000000"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/mll2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/mll"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <ImageView
+                android:id="@+id/pk"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_margin="20dp"
+                android:padding="4dp"
+                android:src="@drawable/pravin"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/pknm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:padding="4dp"
+                android:text="Kale Pravin Tejrao"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:layout_gravity="center"
+                android:textColor="#000000" />
+        </LinearLayout>
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>
